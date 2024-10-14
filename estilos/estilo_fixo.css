@@ -1,0 +1,89 @@
+/*O estilo fixo é o topo do site e o menu ao lado esquerdo com os tópicos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300&family=Open+Sans:wght@300;400;500;600;700;800&display=swap'); /*Importa a fonte Open Sans para ser usada no corpo do texto*/
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*viewheight, cobre toda a tela*/ 
+    font-family: "Open Sans", sans-serif;
+}
+
+header{ /*Topo da página*/
+    color: white;
+    text-align: center;
+    background-color: rgb(6, 156, 6);    
+    padding: 35px;
+}
+
+#logo{ /*Ajustes na logo do IFMA*/
+    width: 60px;
+    margin: 15px;
+    padding: 15px;
+}
+
+header h1{ /*Ajusta o espaçamento do H1*/
+    margin: 0;
+}
+
+header p{ /*Ajusta o espaçamento do p*/
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh; /*O container cobre a altura inteira da tela*/ 
+}
+
+nav{ /*Seção com links de navegação*/
+    width: 170px;
+    background-color: whitesmoke;
+    flex-shrink: 0; /*Não causa quebra de palavras no texto*/
+}
+
+nav ul{ /*Ajusta todos os tópicos*/
+    padding: 10px;
+    text-align: justify;
+}
+
+nav li{ /*Espaçamento de cada item dentro do ul*/
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+nav li a{
+    text-decoration: none; /*Sem o sublinhado*/
+    color: black;
+}
+
+nav li a:hover{ /*Isso faz com que ao passar o mouse, apareça uma linha por debaixo do tópico*/
+    text-decoration: underline;
+}
+
+.conteudo-principal{
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /*Coloca os conteúdos uma abaixo da outra*/
+    justify-content: center; /*Ajusta todos os itens ao centro do container*/
+    align-items: center;
+    text-align: center;
+}
+
+.voltar-topo{
+    width: 100%;
+    text-align: right;
+}
+
+.voltar-topo a{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+.voltar-topo a:hover{
+    text-decoration: underline;
+}
